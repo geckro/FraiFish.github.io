@@ -10,6 +10,7 @@
     --border-color: #46448899;
     --header-color: #46446de6;
     --text-color: #565742;
+    --topnav-color: #B7B988;
 }
 
 body {
@@ -118,7 +119,7 @@ img {
 .topnav a {
     float: left;
     display: block;
-    color: var(--link-color);
+    color: var(--text-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -127,7 +128,7 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: var(--link-hover-color);
+    background-color: var(--topnav-color);
     color: white;
 }
 
