@@ -109,7 +109,7 @@ img {
     max-width: 100%;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
     background-color:var(--page-color);
     overflow: hidden;
