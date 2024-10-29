@@ -111,8 +111,8 @@ img {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color:var(--section-color);
-    overflow: visible;
+    background-color:var(--page-color);
+    overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
