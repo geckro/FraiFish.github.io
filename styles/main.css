@@ -3,8 +3,8 @@
     --section-color: #C9CB9A;
     --shadow-color: #cbcbcb;
     --code-bg-color: #eee;
-    --link-color: #8E9060;
-    --link-hover-color: #B7B988;
+    --link-color: #B7B988;
+    --link-hover-color: #8E9060;
     --link-visited-color: #44435B;
     --link-visited-hover-color: #666487;
     --border-color: #46448899;
@@ -127,8 +127,8 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: white;
-    color: var(--link-hover-color);
+    background-color: var(--link-hover-color);
+    color: white;
 }
 
 /* Add an active class to highlight the current page */
