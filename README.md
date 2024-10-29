@@ -2,4 +2,6 @@
 My site 5
 this is the last time 
 
-## Help me
+## Development logs?
+Please no
+more logging and journaling is the last thing i need right now
