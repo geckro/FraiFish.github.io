@@ -3,12 +3,14 @@
     --section-color: #C9CB9A;
     --shadow-color: #cbcbcb;
     --code-bg-color: #eee;
-    --link-color: #8E9060;
-    --link-hover-color: #B7B988;
+    --link-color: #B7B988;
+    --link-hover-color: #8E9060;
     --link-visited-color: #44435B;
     --link-visited-hover-color: #666487;
     --border-color: #46448899;
     --header-color: #46446de6;
+    --text-color: #565742;
+    --topnav-color: #B7B988;
 }
 
 body {
@@ -29,6 +31,7 @@ header {
 }
 
 p {
+    color: var(--text-color);
     text-align: left;
     padding-left: 7.5%;
     font-size: 18px;
@@ -105,3 +108,40 @@ img {
     overflow: scroll;
     max-width: 100%;
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:var(--section-color);
+    overflow: visible;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--topnav-color);
+    color: white;
+}
+
+/* Add an active class to highlight the current page */
+/* this is not needed for now */
+/*
+.topnav a.active {
+    background-color: #A9AB6D;
+    color: white;
+}
+*/
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
