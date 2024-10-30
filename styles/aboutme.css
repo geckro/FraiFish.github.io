@@ -149,8 +149,8 @@ footer > img {
 
 /* active page */
 .topnav a.active {
-    background-color: var(--link-color);
-    color: var(--page-color);
+    background-color: #C7DBC9;
+    color: var(--text-color);
 }
 
 
