@@ -50,6 +50,11 @@ header {
     font-family: Verdana, monospace;
 }
 
+main {
+    display:grid;
+    grid-template-rows:auto;
+    grid-template-columns: 50% auto;
+}
 p {
     color: var(--text-color);
     text-align: left;
@@ -185,7 +190,7 @@ img {
     border-style:dashed;
     /* the size of the dots */
     border-width: 5px;
-    width: 45%;
+    width: 90%;
     margin: -10px -5px;
 }
 
