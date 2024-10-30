@@ -1,20 +1,38 @@
 :root {
-    --page-color: #DDDEC7;
-    --section-color: #C9CB9A;
-    --shadow-color: #cbcbcb;
+    --page-color: #B8CEAC;
+    --section-color: #C7DD91;
+    --shadow-color: #6E8D6D;
     --code-bg-color: #e9e9e9;
-    --link-color: #B7B988;
-    --link-hover-color: #8E9060;
-    --link-visited-color: #44435B;
-    --link-visited-hover-color: #666487;
-    --row-border-color: #8E90604B;
+    --link-color: #4A6A1Fc1;
+    --link-hover-color: #60733F;
+    --link-visited-color: #5F5C73;
+    --link-visited-hover-color: #7E7A99;
+    --row-border-color: #4A6A1Fc1;
     --border-color: #46448899;
     --header-color: #46446de6;
-    --text-color: #565742;
-    --topnav-color: #B7B988;
+    --text-color: #4D5B1F;
+    --topnav-color: var(--link-color);
     --arcaea: #1f1e33; /* lol haha Arcaea */
 }
-
+/* old palette is just. moved to dark mode. lol */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --page-color: #DDDEC7;
+        --section-color: #C9CB9A;
+        --shadow-color: #cbcbcb;
+        --code-bg-color: #e9e9e9;
+        --link-color: #8E9060;
+        --link-hover-color: #B7B988;
+        --link-visited-color: #44435B;
+        --link-visited-hover-color: #666487;
+        --row-border-color: #8E90604B;
+        --border-color: #46448899;
+        --header-color: #46446de6;
+        --text-color: #565742;
+        --topnav-color: #B7B988;
+        --arcaea: #1f1e33; /* lol haha Arcaea */
+    }
+}
 body {
     background: var(--page-color);
     font-family: Calibri, sans-serif;
@@ -132,7 +150,7 @@ img {
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: var(--topnav-color);
-    color: var(--link-color);
+    color: var(--page-color);
 }
 
 /* Add an active class to highlight the current page */
