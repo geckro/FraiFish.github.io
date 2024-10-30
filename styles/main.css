@@ -122,20 +122,10 @@ a:visited:hover {
     content: attr(datetime);
 }
 
-#clock {
-    display:block;
-    font-size: 300%;
-    margin-bottom: 0.5em;
-    font-weight: normal;
-    font-family:Segoe UI Light, sans-serif;
-}
-
 footer {
-    p {
-        margin-top: 36px;
-        font-size: 16px;
-        text-align: center;
-    }
+    margin-top: 54px;
+    font-size: 16px;
+    text-align: center;
 }
 
 img {
