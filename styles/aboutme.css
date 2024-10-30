@@ -86,9 +86,9 @@ hr {
 }
 
 h2 {
-    color: var(--header-color);
-    font-size: 18px;
-    font-family: Calibri, sans-serif;
+    color:var(--header-color);
+    font-size:36px;
+    padding-left:7.5%;
 }
 
 a {
@@ -111,6 +111,7 @@ footer {
         margin-top: 20px;
         font-size: 16px;
         text-align: center;
+        padding-left:0;
     }
 }
 
