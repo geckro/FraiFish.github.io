@@ -1,4 +1,5 @@
 ﻿setInterval(showTime, 1000);
+
 function showTime() {
     let time = new Date();
     // if we want date we're gonna have to work with this -4 that I did to shift timezones
