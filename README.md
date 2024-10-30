@@ -3,7 +3,7 @@ My site 5
 this is the last time 
 
 ## Site palette
-![Crystalline Iceplant] (/website-palette.jpg)
+![Crystalline Iceplant](/website-palette.jpg)
 ## Development logs?
 Please no \
 more logging and journaling is the last thing i need right now
