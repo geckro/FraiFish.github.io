@@ -201,9 +201,12 @@ img {
 }
 
 .card > p {
+    padding-left:0;
+    text-align:center;
     margin-top:-18px;
     font-family: Segoe UI, sans-serif;
 }
+
 .card > h3 {
     font-family:Segoe UI Light, sans-serif;
     padding:12px 0 0 0;
