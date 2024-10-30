@@ -11,7 +11,7 @@
     --border-color: #46448899;
     --header-color: #46446de6;
     --text-color: #4D5B1F;
-    --topnav-color: var(--link-color);
+    --topnav-color: var(--link-hover-color);
     --arcaea: #1f1e33; /* lol haha Arcaea */
 }
 /* old palette is just. moved to dark mode. lol */
@@ -154,7 +154,7 @@ img {
 
 /* active page */
 .topnav a.active {
-    background-color: var(--link-hover-color);
+    background-color: var(--link-color);
     color: var(--page-color);
 }
 
