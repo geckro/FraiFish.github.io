@@ -198,6 +198,10 @@ img {
     /* this is the part that gives you "separation" between cards */
     margin: 16px 0;
 }
+
+.card > p {
+    font-family: Segoe UI, sans-serif;
+}
 .card > h3 {
     font-family:Segoe UI Light, sans-serif;
     padding-top:12px;
