@@ -153,14 +153,12 @@ img {
     color: var(--page-color);
 }
 
-/* Add an active class to highlight the current page */
-/* this is not needed for now */
-/*
+/* active page */
 .topnav a.active {
-    background-color: #A9AB6D;
-    color: white;
+    background-color: var(--link-hover-color);
+    color: var(--page-color);
 }
-*/
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
