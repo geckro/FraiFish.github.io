@@ -39,7 +39,7 @@ body {
     margin: auto;
     max-width: 80%;
     letter-spacing: 0.2px;
-    padding-bottom: 10em; 
+    padding-bottom: 10em;
 }
 
 header {
@@ -63,8 +63,14 @@ p {
     font-family: Calibri, sans-serif;
 }
 
+main > p {
+    padding: 0;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top: 24px;
+}
 h1 {
-    color: var(--arcaea); 
+    color: var(--arcaea);
     font-size: 36px;
     opacity: unset;
 }
@@ -122,10 +128,20 @@ a:visited:hover {
     content: attr(datetime);
 }
 
+#clock {
+    display:block;
+    font-size: 300%;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    font-family:Segoe UI Light, sans-serif;
+}
+
 footer {
-    margin-top: 54px;
-    font-size: 16px;
-    text-align: center;
+    p {
+        margin-top: 54px;
+        font-size: 16px;
+        text-align: center;
+    }
 }
 
 img {
@@ -191,7 +207,6 @@ img {
     /* the size of the dots */
     border-width: 5px;
     width: 90%;
-    margin: -10px -5px;
 }
 
 /* Clear floats after the columns */
