@@ -1,0 +1,251 @@
+:root {
+    --page-color: #B8CEAC;
+    --section-color: #C7DD91;
+    --shadow-color: #6E8D6D;
+    --code-bg-color: #e9e9e9;
+    --link-color: #4A6A1Fc1;
+    --link-hover-color: #60733F;
+    --link-visited-color: #5F5C73;
+    --link-visited-hover-color: #7E7A99;
+    --row-border-color: #4A6A1Fc1;
+    --border-color: #46448899;
+    --header-color: #46446de6;
+    --text-color: #4D5B1F;
+    --topnav-color: var(--link-hover-color);
+    --arcaea: #1f1e33; /* lol haha Arcaea */
+}
+/* old palette is just. moved to dark mode. lol */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --page-color: #B7B988;
+        --section-color: #C9CB9A;
+        --shadow-color: #8E90604B;
+        --code-bg-color: #8E90604B;
+        --link-color: #8E9060;
+        --link-hover-color: #565742;
+        --link-visited-color: #44435B;
+        --link-visited-hover-color: #666487;
+        --row-border-color: #8E90604B;
+        --border-color: #46448899;
+        --header-color: #46446de6;
+        --text-color: #DDDEC7;
+        --topnav-color: #B7B988;
+        --arcaea: #e0e1cc; /* lol haha Arcaea */
+    }
+}
+body {
+    background: var(--page-color);
+    font-family: Calibri, sans-serif;
+    margin: auto;
+    max-width: 80%;
+    letter-spacing: 0.2px;
+    padding-bottom: 10em;
+}
+
+header {
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    font-family: Verdana, monospace;
+}
+
+main {
+    display:grid;
+    grid-template-rows:auto;
+    grid-template-columns: 50% auto;
+}
+p {
+    color: var(--text-color);
+    text-align: left;
+    padding-left: 7.5%;
+    font-size: 18px;
+    font-family: Calibri, sans-serif;
+}
+
+main > p {
+    padding: 0;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top: 24px;
+}
+h1 {
+    color: var(--arcaea);
+    font-size: 36px;
+    opacity: unset;
+}
+
+hr {
+    border: 4px solid var(--border-color);
+    border-radius: 2px;
+    width: 85%;
+}
+
+h2 {
+    color: var(--header-color);
+    font-size: 18px;
+    font-family: Calibri, sans-serif;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--link-visited-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+a:visited:hover {
+    color: var(--link-visited-hover-color);
+}
+
+#homepage-link > a,
+#date {
+    padding: 0.5em;
+}
+#homepage-link {
+    text-align: center;
+    padding-right: 2rem;
+}
+#homepage-link > a:visited {
+    color: var(--link-color);
+}
+#homepage-link > a:visited:hover {
+    color: var(--link-hover-color);
+}
+#date {
+    border-radius: 0.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+#date-last-updated {
+    font-weight: normal;
+}
+#date-last-updated::after {
+    content: attr(datetime);
+}
+
+#clock {
+    display:block;
+    font-size: 300%;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    font-family:Segoe UI Light, sans-serif;
+    color:var(--text-color)
+}
+
+footer {
+    p {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+img {
+    box-shadow: 0 2px 6px var(--shadow-color);
+    overflow: scroll;
+    max-width: 100%;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color:var(--page-color);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--topnav-color);
+    color: var(--page-color);
+}
+
+/* active page */
+.topnav a.active {
+    background-color: var(--link-color);
+    color: var(--page-color);
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* columns */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    border-color: var(--row-border-color);
+    border-style:dashed;
+    /* the size of the dots */
+    border-width: 5px;
+    width: 90%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 6px 0 var(--shadow-color);
+    padding: 0 8px 8px;
+    text-align: center;
+    background-color: var(--code-bg-color);
+    /* this is the part that gives you "separation" between cards */
+    margin: 16px 0;
+}
+
+.card > p {
+    padding-left:0;
+    text-align:center;
+    margin-top:-18px;
+    font-family: Segoe UI, sans-serif;
+}
+
+.card > h3 {
+    font-family:Segoe UI Light, sans-serif;
+    padding:12px 0 0 0;
+    font-size:24px;
+    color:var(--text-color)
+}
