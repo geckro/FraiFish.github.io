@@ -239,6 +239,7 @@ footer {
         font-size:1.25em;
     }
     .art > h2 {
-        font-size:1.25em;
+        /* 1.25 * 2.25 */
+        font-size:2.8125em;
     }
 }
