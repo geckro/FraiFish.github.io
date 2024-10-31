@@ -36,15 +36,6 @@ old palette defunct as of now
 }
 */
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
 body {
     background: var(--page-color);
     font-family: Calibri, sans-serif;
