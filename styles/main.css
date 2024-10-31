@@ -205,7 +205,7 @@ img {
     margin-bottom: -10px;
 }
 
-@media (max-width: 1810px) {
+@media (max-width: 1600px) {
     .thingyGrid {
         flex-direction:column;
     }
