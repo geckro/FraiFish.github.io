@@ -67,7 +67,6 @@ header > h1 {
     color: var(--arcaea);
     opacity: unset;
 }
-
 header > .topnav {
     text-align: left;
     font-family: Verdana, monospace;
@@ -186,21 +185,37 @@ img {
     max-width: 100%;
 }
 
+/* Remove extra left and right margins, due to padding */
+.thingyGrid {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    border-color: var(--row-border-color);
+    border-style:dashed;
+    /* the size of the dots */
+    border-width: 5px;
+    width:90%;
+}
+
+/* Float four columns side by side */
 .thingyColumn {
-    width: 50%;
-    padding: 10px;
+    width:47%;
+    padding: 1.5%;
     margin-top: -10px;
     margin-bottom: -10px;
 }
 
-/* Remove extra left and right margins, due to padding */
-.thingyGrid {
-    border-color: var(--row-border-color);
-    border-style: dashed;
-    /* the size of the dots */
-    border-width: 5px;
-    width: 90%;
+@media (max-width: 1810px) {
+    .thingyGrid {
+        flex-direction:column;
+    }
+    .thingyColumn {
+        width:98%;
+        padding: 1%;
+    }
 }
+
+
 
 /* Style the counter cards */
 .card {
