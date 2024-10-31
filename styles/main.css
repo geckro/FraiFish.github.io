@@ -33,6 +33,16 @@
         --arcaea: #e0e1cc; /* lol haha Arcaea */
     }
 }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
 body {
     background: var(--page-color);
     font-family: Calibri, sans-serif;
@@ -46,21 +56,64 @@ header {
     padding-top: 0.5rem;
     font-size: 2rem;
     margin: auto;
-    text-align: center;
-    font-family: Verdana, monospace;
 }
 
-main {
-    display:grid;
-    grid-template-rows:auto;
-    grid-template-columns: 50% auto;
+header > h1 {
+    font-family:Comic Sans MS, cursive;
+    font-weight:bold;
+    font-size:3rem;
+    text-align:center;
+    color: var(--arcaea);
+    opacity: unset;
 }
+header > .topnav {
+    text-align: center;
+    font-family: Verdana, monospace;
+    background-color:var(--page-color);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+header > .topnav a {
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+header > .topnav a:hover {
+    background-color: var(--topnav-color);
+    color: var(--page-color);
+}
+
+/* active page */
+header > .topnav a.active {
+    background-color: #C7DBC9;
+    color: var(--text-color);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+header > .topnav .icon {
+    display: none;
+}
+
+/* honestly i dont remember what this is for */
 p {
     color: var(--text-color);
     text-align: left;
     padding-left: 7.5%;
     font-size: 18px;
     font-family: Calibri, sans-serif;
+}
+
+main {
+    display:grid;
+    grid-template-rows:auto;
+    grid-template-columns: 50% auto;
 }
 
 main > p {
@@ -72,63 +125,38 @@ main > p {
 .art > p {
     font-size: 20px;
 }
-h1 {
-    color: var(--arcaea);
+.art h2 {
+    color: var(--header-color);
     font-size: 36px;
-    opacity: unset;
+    font-family: Calibri, sans-serif;
+    text-align:center;
 }
 
+/* 
+we are not using this 
 hr {
     border: 4px solid var(--border-color);
     border-radius: 2px;
     width: 85%;
 }
-
-h2 {
-    color: var(--header-color);
-    font-size: 18px;
-    font-family: Calibri, sans-serif;
-}
+*/
 
 a {
     color: var(--link-color);
     text-decoration: none;
 }
+
 a:visited {
     color: var(--link-visited-color);
 }
+
 a:hover {
     color: var(--link-hover-color);
     text-decoration: underline;
 }
+
 a:visited:hover {
     color: var(--link-visited-hover-color);
-}
-
-#homepage-link > a,
-#date {
-    padding: 0.5em;
-}
-#homepage-link {
-    text-align: center;
-    padding-right: 2rem;
-}
-#homepage-link > a:visited {
-    color: var(--link-color);
-}
-#homepage-link > a:visited:hover {
-    color: var(--link-hover-color);
-}
-#date {
-    border-radius: 0.3rem;
-    font-weight: bold;
-    text-align: center;
-}
-#date-last-updated {
-    font-weight: normal;
-}
-#date-last-updated::after {
-    content: attr(datetime);
 }
 
 #clock {
@@ -154,47 +182,6 @@ img {
     max-width: 100%;
 }
 
-/* Add a background color to the top navigation */
-.topnav {
-    background-color:var(--page-color);
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: var(--text-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: var(--topnav-color);
-    color: var(--page-color);
-}
-
-/* active page */
-.topnav a.active {
-    background-color: #C7DBC9;
-    color: var(--text-color);
-}
-
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-/* columns */
-
-* {
-    box-sizing: border-box;
-}
-
 /* Float four columns side by side */
 .column {
     float: left;
@@ -218,15 +205,6 @@ img {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
 }
 
 /* Style the counter cards */
