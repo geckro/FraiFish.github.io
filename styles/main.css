@@ -55,12 +55,11 @@ body {
 }
 
 header {
-    padding-top: 0.5rem;
-    font-size: 2rem;
     margin: auto;
 }
 
 header > h1 {
+    padding-top: 0.5rem;
     font-family:Comic Sans MS, cursive;
     font-weight:bold;
     font-size:3rem;
@@ -68,23 +67,26 @@ header > h1 {
     color: var(--arcaea);
     opacity: unset;
 }
+
 header > .topnav {
-    text-align: center;
+    text-align: left;
     font-family: Verdana, monospace;
     background-color:var(--page-color);
     overflow: hidden;
+    grid-template-rows: auto;
+    grid-auto-columns: auto;
+    padding: 0.8rem;
 }
 
 /* Style the links inside the navigation bar */
 header > .topnav a {
-    float: left;
-    display: block;
     color: var(--text-color);
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5rem;
+    text-align:center;
+    padding: 2rem;
 }
+
 
 /* Change the color of links on hover */
 header > .topnav a:hover {
@@ -184,9 +186,7 @@ img {
     max-width: 100%;
 }
 
-/* Float four columns side by side */
 .thingyColumn {
-    float: left;
     width: 50%;
     padding: 10px;
     margin-top: -10px;
@@ -196,17 +196,10 @@ img {
 /* Remove extra left and right margins, due to padding */
 .thingyGrid {
     border-color: var(--row-border-color);
-    border-style:dashed;
+    border-style: dashed;
     /* the size of the dots */
     border-width: 5px;
     width: 90%;
-}
-
-/* Clear floats after the columns */
-.thingyGrid:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* Style the counter cards */
