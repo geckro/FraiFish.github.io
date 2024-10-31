@@ -205,13 +205,13 @@ img {
     margin-bottom: -10px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
     .thingyGrid {
         flex-direction:column;
     }
     .thingyColumn {
-        width:98%;
-        padding: 1%;
+        width:95%;
+        padding: 2.5%;
     }
 }
 
