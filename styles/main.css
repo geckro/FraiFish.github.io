@@ -208,6 +208,12 @@ img {
         width: 95%;
         padding: 2.5%;
     }
+    .art > p {
+        font-size:1.25em;
+    }
+    .art > h2 {
+        font-size:1.25em;
+    }
 }
 
 
