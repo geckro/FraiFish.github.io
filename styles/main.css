@@ -66,9 +66,12 @@ header > .topnav {
     font-family: Verdana, monospace;
     background-color: var(--page-color);
     overflow: hidden;
-    grid-template-rows: auto;
-    grid-auto-columns: auto;
-    padding: 0.8rem;
+    display:grid;
+    grid-column-gap: .5%;
+    /* idfk bro help me */
+    /* this code creates 12 columns with auto size, why do i need this*/
+    grid-template-columns: repeat(64, auto);
+    grid-auto-columns: min-content;
 }
 
 /* Style the links inside the navigation bar */
