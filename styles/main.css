@@ -4,11 +4,10 @@
     --shadow-color: #6E8D6D;
     --code-bg-color: #e9e9e9;
     --link-color: #4A6A1Fc1;
-    --link-hover-color: #60733F;
-    --link-visited-color: #5F5C73;
-    --link-visited-hover-color: #7E7A99;
+    --link-hover-color: #306316;
+    --link-visited-color: #1A1914;
+    --link-visited-hover-color: var(--link-hover-color);
     --row-border-color: #4A6A1Fc1;
-    --border-color: #46448899;
     --header-color: #46446de6;
     --text-color: #4D5B1F;
     --topnav-color: var(--link-hover-color);
