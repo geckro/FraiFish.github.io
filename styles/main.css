@@ -246,7 +246,7 @@ footer {
 }
 
 /* phone */
-@media (max-width:320px) {
+@media (max-width:480px) {
 
     /* main is now a big grid */
     .submain {
